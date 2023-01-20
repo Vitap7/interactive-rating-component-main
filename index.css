@@ -6,16 +6,118 @@ html,
 body {
   height: 100%;
   margin: 0;
+}
+
+body {
   font-family: "Overpass", serif;
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.25em;
+  padding-top: 1em;
+}
+
+button {
+  border: none;
 }
 
 p {
+  color: hsl(216deg, 12%, 54%);
   font-size: 15px;
+}
+p button {
+  color: hsl(216deg, 12%, 54%);
+  background-color: rgb(42, 49, 60);
+}
+
+section {
+  width: 24em;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 1.75em;
+  border-radius: 1.5em;
+  background-color: hsl(215deg, 20%, 16%);
+}
+
+.section-rating img {
+  align-self: flex-start;
+  background-color: rgb(42, 49, 60);
+  width: 2.15em;
+  padding: 0.7em;
+  border-radius: 50%;
+}
+.section-rating .rating-level {
+  display: flex;
+  justify-content: space-between;
+}
+.section-rating .rating-level button {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+.section-rating .rating-level button:hover {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 12%, 63%);
+  transition: all ease-in-out 0.25s;
+}
+.section-rating .rating-level button.selected {
+  background-color: hsl(25deg, 97%, 53%);
+}
+.section-rating .submit-btn {
+  font-weight: bold;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  margin-top: 1em;
+  padding: 0.75em 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 1.25em;
+}
+.section-rating .submit-btn:hover {
+  cursor: pointer;
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+  transition: all ease-in-out 0.25s;
+}
+
+.section-thankyou {
+  align-items: center;
+}
+.section-thankyou img {
+  padding: 0.5em 0;
+}
+.section-thankyou p {
+  text-align: center;
+  padding: 0.5em 1em;
+  padding-bottom: 0.3em;
+  border-radius: 1.5em;
+}
+.section-thankyou .rating-state {
+  color: hsl(25deg, 97%, 53%);
+  background-color: rgb(42, 49, 60);
+}
+
+.hidden-section {
+  display: none;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  position: absolute;
+  bottom: 0;
 }
 
 .attribution a {

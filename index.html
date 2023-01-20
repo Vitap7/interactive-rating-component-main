@@ -20,27 +20,44 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <!-- Rating state start -->
+    <main>
+      <section class="section-rating">
+        <img src="./images/icon-star.svg" alt="icon-star" />
+        <header>How did we do?</header>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <p class="rating-level">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+        </p>
+        <button class="submit-btn">Submit</button>
+      </section>
 
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
+      <section class="section-thankyou hidden-section">
+        <img src="./images/illustration-thank-you.svg" alt="thank-you-svg" />
+        <p class="rating-state">
+          You selected
+          <!-- Add rating here -->
+          out of 5
+        </p>
+        <header>Thank you!</header>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
 
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/Vitap7">Vitap</a>.
-    </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Vitap7">Vitap</a>.
+      </div>
+    </main>
   </body>
 </html>

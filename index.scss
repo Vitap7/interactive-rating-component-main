@@ -8,6 +8,9 @@ html,
 body {
   height: 100%;
   margin: 0;
+  margin: 0;
+  padding: 0;
+  font-size: $base-font-size;
 }
 
 body {
@@ -17,16 +20,23 @@ body {
 
 main {
   height: 100%;
+  margin: auto 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (min-width: $mobile-width) {
+    @media (max-width: $desktop-width) {
+      margin: auto 1.5em;
+    }
+  }
 }
 
 header {
   color: $white;
   font-size: 1.25em;
   padding-top: 1em;
+  font-weight: $font-weight-normal;
 }
 
 button {
@@ -49,6 +59,12 @@ section {
   padding: 1.5em 1.75em;
   border-radius: 1.5em;
   background-color: $deep-dark-blue;
+  @media (min-width: $mobile-width) {
+    @media (max-width: $desktop-width) {
+      width: auto;
+      padding: 1.5em;
+    }
+  }
 }
 
 .section-rating {
@@ -80,7 +96,7 @@ section {
     }
   }
   .submit-btn {
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     color: $white;
     background-color: $orange;
     margin-top: 1em;
@@ -94,6 +110,12 @@ section {
       background-color: $white;
       transition: all ease-in-out 0.25s;
     }
+    @media (min-width: $mobile-width) {
+      @media (max-width: $desktop-width) {
+        padding: 1em 0;
+        border-radius: 1.75em;
+      }
+    }
   }
 }
 
@@ -104,13 +126,13 @@ section {
   }
   p {
     text-align: center;
-    padding: 0.5em 1em;
-    padding-bottom: 0.3em;
-    border-radius: 1.5em;
   }
   .rating-state {
     color: $orange;
     background-color: $light-dark-blue;
+    padding: 0.5em 1em;
+    padding-bottom: 0.3em;
+    border-radius: 1.5em;
   }
 }
 

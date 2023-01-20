@@ -72,7 +72,9 @@ section {
   transition: all ease-in-out 0.25s;
 }
 .section-rating .rating-level button.selected {
+  color: hsl(0deg, 0%, 100%);
   background-color: hsl(25deg, 97%, 53%);
+  transition: all ease-in-out 0.25s;
 }
 .section-rating .submit-btn {
   font-weight: bold;

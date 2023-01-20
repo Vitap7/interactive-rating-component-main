@@ -73,7 +73,9 @@ section {
         transition: all ease-in-out 0.25s;
       }
       &.selected {
+        color: $white;
         background-color: $orange;
+        transition: all ease-in-out 0.25s;
       }
     }
   }

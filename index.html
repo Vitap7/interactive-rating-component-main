@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css?family=Overpass"
     />
     <link rel="stylesheet" href="index.css" />
+    <script src="./index.js" async></script>
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
@@ -29,11 +30,11 @@
           is appreciated to help us improve our offering!
         </p>
         <p class="rating-level">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
+          <button data-level="1">1</button>
+          <button data-level="2">2</button>
+          <button data-level="3">3</button>
+          <button data-level="4">4</button>
+          <button data-level="5">5</button>
         </p>
         <button class="submit-btn">Submit</button>
       </section>
@@ -42,7 +43,7 @@
         <img src="./images/illustration-thank-you.svg" alt="thank-you-svg" />
         <p class="rating-state">
           You selected
-          <!-- Add rating here -->
+          <span id="rate"></span>
           out of 5
         </p>
         <header>Thank you!</header>

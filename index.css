@@ -51,7 +51,7 @@ section {
   border-radius: 1.5em;
   background-color: hsl(215deg, 20%, 16%);
 }
-@media (min-width: 375px) and (max-width: 1440px) {
+@media (min-width: 375px) and (max-width: 480px) {
   section {
     width: auto;
     padding: 1.25em;
@@ -102,7 +102,7 @@ section {
   background-color: hsl(0deg, 0%, 100%);
   transition: all ease-in-out 0.25s;
 }
-@media (min-width: 375px) and (max-width: 1440px) {
+@media (min-width: 375px) and (max-width: 480px) {
   .section-rating .submit-btn {
     padding: 1em 0;
     border-radius: 1.75em;

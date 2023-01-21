@@ -46,7 +46,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [my solution](https://www.frontendmentor.io/solutions/interactive-rating-component-cusGYQ_R8n)
 - Live Site URL: [interactive-rating-component-main](https://interactive-rating-component-main-cgtf9dj1z-vitap7.vercel.app/)
 
 ## My process
